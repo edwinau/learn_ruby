@@ -1,6 +1,6 @@
-class TestFriend
+class Friend
 
-  def greet(name="")
+  def greet(name= "")
       return "Hello #{name}!"
   end
 
