@@ -1,5 +1,5 @@
 def ftoc(fa)
-  fa * 5/9 - 32.0
+  (fa - 32) * 5/9
 end
 
 def ctof(ce)
