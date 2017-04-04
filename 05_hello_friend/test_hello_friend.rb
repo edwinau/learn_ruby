@@ -3,7 +3,11 @@ require 'friend'
 
 class TestFriend < MiniTest::Test
   # 'setup' gets run before each individual test
+  attr_accessor :friend
+   @friend = friend
+
   # We can set up variables that we reuse here
+
   def setup
     @friend = Friend.new
   end
@@ -15,13 +19,12 @@ class TestFriend < MiniTest::Test
 
   def test_greets_no_one
     assert_equal "Hello !", @friend.greet
-
+  end
     # Hint: remember default values?
     #
-    # def greet(name = ?)
-    #   # your code here
-    # end
+  def greet(name = "")
+    return "Hello #{name}!"
+  end
     #
     # What should ? be equal to?
-  end
 end
